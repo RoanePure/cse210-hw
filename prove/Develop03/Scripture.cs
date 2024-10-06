@@ -1,10 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-
-// For showing creativity snd exceeding requirements the program will load the scriptures from a file.
-// I created a scripture.txt file to load the scriptures.
-// I made sure that the program randomly selects a verse from the file instead of showing everything at once.  
+  
 class Scripture
 {
     private Reference _reference;
