@@ -1,0 +1,57 @@
+Foundation #1: Abstraction with Youtube Videos
+
+class: Video
+    Attributes:
+        _title: string
+        _author: string
+        _length: int
+        _comments: List<Comment>
+    Methods:
+        AddComment(Comment comment): void
+        GetNumberOfComments(): int
+        DisplayVideoInfo(): void
+
+class: Comment
+    Attributes:
+        _commenter: string
+        _text: string
+    Methods:
+        DisplayComment(): void
+
+
+Foundation #2: Encapsulation with Online Ordering
+
+class: Product
+    Attributes:
+        _name: string
+        _productid: int
+        _price: float
+        _quantity: int
+    Methods:
+        GetTotalCost(): float
+
+class: Address
+    Attributes:
+        _street: string
+        _city: string
+        _stateProvince: string
+        _country: string
+    Methods:
+        IsInUSA(): bool
+        GetFullAddress(): string
+
+class: Customer
+    Attributes:
+        _name: string
+        _address: Address
+    Methods:
+        IsInUSA(): bool
+
+class: Order
+    Attributes:
+        _product: List<Product>
+        _customer: Customer
+    Methods:
+        GetTotalCost(): float
+        GetPackagingLabel(): string
+        GetShippingLabel(): string
