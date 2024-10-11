@@ -11,6 +11,8 @@ class: Video
         GetNumberOfComments(): int
         DisplayVideoInfo(): void
 
+----------------------------------------------------------------
+
 class: Comment
     Attributes:
         _commenter: string
@@ -18,7 +20,8 @@ class: Comment
     Methods:
         DisplayComment(): void
 
-
+*****************************************************************
+*****************************************************************
 Foundation #2: Encapsulation with Online Ordering
 
 class: Product
@@ -30,6 +33,8 @@ class: Product
     Methods:
         GetTotalCost(): float
 
+----------------------------------------------------------------
+
 class: Address
     Attributes:
         _street: string
@@ -40,12 +45,16 @@ class: Address
         IsInUSA(): bool
         GetFullAddress(): string
 
+----------------------------------------------------------------
+
 class: Customer
     Attributes:
         _name: string
         _address: Address
     Methods:
         IsInUSA(): bool
+
+----------------------------------------------------------------
 
 class: Order
     Attributes:
