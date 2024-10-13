@@ -24,6 +24,7 @@ class Program
 
         Order order2 = new Order(customer2);
         order2.AddProduct(product3);
+        order2.AddProduct(product1);
 
         // Display Order 1
         Console.WriteLine(order1.GetPackagingLabel());
